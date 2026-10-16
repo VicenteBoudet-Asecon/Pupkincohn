@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title data-i18n="meta.title">Pupkin Cohn | Estudio Legal Tributario</title>
+  <meta name="description" content="Estudio legal tributario en Chile. Asesoría tributaria y jurídica para empresas, inversionistas y familias empresarias: planificación, cumplimiento y controversias." data-i18n-attr="content:meta.desc">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://pupkincohn.com/">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pupkin Cohn">
+  <meta property="og:url" content="https://pupkincohn.com/">
+  <meta property="og:locale" content="es_CL" data-i18n-attr="content:meta.locale">
+  <meta property="og:title" content="Pupkin Cohn | Estudio Legal Tributario" data-i18n-attr="content:meta.title">
+  <meta property="og:description" content="Estudio legal tributario en Chile. Asesoría tributaria y jurídica para empresas, inversionistas y familias empresarias: planificación, cumplimiento y controversias." data-i18n-attr="content:meta.desc">
+  <meta property="og:image" content="https://pupkincohn.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="assets/fonts/jost-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script>
+    /* Resolve the language before first paint: ?lang= > saved choice > browser language. */
+    (function (d) {
+      var h = d.documentElement;
+      h.className = h.className.replace('no-js', 'js');
+      var lang = 'es';
+      try {
+        var q = new URLSearchParams(location.search).get('lang');
+        var s = localStorage.getItem('pkcn-lang');
+        var n = (navigator.languages && navigator.languages[0]) || navigator.language || 'es';
+        lang = (q === 'en' || q === 'es') ? q : (s === 'en' || s === 'es') ? s : (/^en/i.test(n) ? 'en' : 'es');
+      } catch (e) {}
+      h.setAttribute('data-lang', lang);
+      window.__PKCN_LANG = lang;
+    })(document);
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Pupkin Cohn",
+    "alternateName": "Pupkin Cohn Estudio Legal Tributario",
+    "url": "https://pupkincohn.com/",
+    "logo": "https://pupkincohn.com/assets/img/icon-512.png",
+    "image": "https://pupkincohn.com/assets/img/og-image.png",
+    "description": "Estudio legal tributario. Asesoría tributaria y jurídica para empresas, inversionistas y familias empresarias.",
+    "areaServed": "CL",
+    "knowsLanguage": ["es", "en"],
+    "knowsAbout": ["Derecho tributario", "Planificación tributaria", "Tributación internacional", "Litigio tributario", "Precios de transferencia"]
+  }
+  </script>
+</head>
+
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="pk-monogram" viewBox="0 0 74.77 111.54"><rect width="74.77" height="111.54" fill="#3B6FAB"/><path fill="#fff" d="M18.42 22.24L24.15 22.24C25.45 22.24 26.66 22.12 27.77 21.88C28.88 21.65 29.84 21.28 30.64 20.79C31.44 20.3 32.06 19.66 32.49 18.86C32.93 18.06 33.15 17.07 33.15 15.91C33.15 14.75 32.92 13.77 32.46 12.99C32.01 12.21 31.39 11.57 30.61 11.08C29.83 10.59 28.89 10.25 27.8 10.05C26.71 9.85 25.53 9.75 24.25 9.75L18.42 9.75L18.42 22.24M13.02 5.16L24.8 5.16C26.87 5.16 28.76 5.37 30.47 5.79C32.18 6.21 33.64 6.85 34.84 7.73C36.04 8.6 36.97 9.71 37.62 11.06C38.27 12.4 38.6 14.02 38.6 15.91C38.6 17.84 38.25 19.49 37.54 20.87C36.83 22.26 35.85 23.38 34.59 24.26C33.34 25.13 31.85 25.78 30.12 26.19C28.39 26.61 26.53 26.82 24.53 26.82L18.42 26.82L18.42 43.79L13.02 43.79L13.02 5.16M38.71 75.81C37.19 77.88 35.2 79.56 32.77 80.85C30.33 82.14 27.4 82.79 23.99 82.79C21.04 82.79 18.32 82.29 15.83 81.29C13.34 80.29 11.19 78.89 9.39 77.09C7.59 75.29 6.18 73.14 5.16 70.65C4.15 68.16 3.64 65.42 3.64 62.44C3.64 59.42 4.16 56.67 5.19 54.18C6.23 51.69 7.66 49.56 9.5 47.79C11.34 46.03 13.51 44.66 16.02 43.68C18.53 42.69 21.26 42.2 24.2 42.2C25.51 42.2 26.84 42.33 28.19 42.59C29.53 42.84 30.82 43.22 32.06 43.73C33.3 44.24 34.42 44.87 35.44 45.61C36.46 46.36 37.33 47.22 38.06 48.2L33.8 51.48C32.86 50.17 31.52 49.09 29.8 48.23C28.07 47.38 26.2 46.95 24.2 46.95C21.95 46.95 19.92 47.36 18.12 48.18C16.32 49 14.78 50.11 13.51 51.53C12.24 52.95 11.26 54.6 10.57 56.47C9.87 58.34 9.53 60.33 9.53 62.44C9.53 64.62 9.86 66.66 10.54 68.55C11.21 70.44 12.17 72.09 13.43 73.49C14.68 74.89 16.21 75.99 18.01 76.79C19.81 77.59 21.82 77.99 24.04 77.99C26.22 77.99 28.2 77.55 29.99 76.68C31.77 75.81 33.24 74.54 34.4 72.86L38.71 75.81M64.65 74.68L64.76 74.68L64.76 43.8L70.16 43.8L70.16 82.43L63.34 82.43L42.93 50.89L42.83 50.89L42.83 82.43L37.42 82.43L37.42 43.8L44.46 43.8L64.65 74.68M43.75 22.18L43.86 22.18L61.1 5.16L68.57 5.16L49.81 22.84L69.72 43.79L61.97 43.79L43.86 23.82L43.75 23.82L43.75 43.79L38.35 43.79L38.35 5.16L43.75 5.16L43.75 22.18"/></symbol><symbol id="pk-wordmark" viewBox="0 0 529.71 35.79"><path fill="currentColor" d="M3.46 16.16L9.33 16.16C12.06 16.16 14.13 15.63 15.54 14.58C16.95 13.52 17.65 11.98 17.65 9.96C17.65 7.84 16.93 6.29 15.47 5.32C14.01 4.34 11.96 3.85 9.33 3.85L3.46 3.85L3.46 16.16M0 0.87L9.62 0.87C11.35 0.87 12.92 1.05 14.34 1.42C15.75 1.79 16.96 2.35 17.97 3.1C18.98 3.86 19.76 4.8 20.3 5.94C20.85 7.08 21.12 8.42 21.12 9.96C21.12 11.5 20.84 12.84 20.28 13.98C19.71 15.11 18.93 16.06 17.92 16.81C16.91 17.57 15.69 18.14 14.26 18.52C12.84 18.91 11.26 19.1 9.53 19.1L3.46 19.1L3.46 34.93L0 34.93L0 0.87M61.9 35.65C59.76 35.65 58.01 35.28 56.64 34.54C55.28 33.81 54.2 32.88 53.4 31.76C52.59 30.64 52.04 29.41 51.73 28.09C51.43 26.77 51.27 25.52 51.27 24.34L51.27 6.54L54.16 6.54L54.16 24.02C54.16 25.17 54.29 26.29 54.56 27.37C54.83 28.45 55.26 29.41 55.86 30.25C56.46 31.1 57.26 31.78 58.25 32.3C59.24 32.82 60.45 33.08 61.9 33.08C63.34 33.08 64.55 32.82 65.54 32.3C66.53 31.78 67.33 31.1 67.93 30.25C68.53 29.41 68.96 28.45 69.23 27.37C69.5 26.29 69.63 25.17 69.63 24.02L69.63 6.54L72.52 6.54L72.52 24.34C72.52 25.52 72.36 26.77 72.06 28.09C71.75 29.41 71.2 30.64 70.39 31.76C69.59 32.88 68.5 33.81 67.13 34.54C65.75 35.28 64.01 35.65 61.9 35.65M109.73 19.29L114.62 19.29C116.89 19.29 118.62 18.85 119.79 17.97C120.97 17.09 121.56 15.8 121.56 14.12C121.56 12.35 120.95 11.07 119.73 10.25C118.52 9.44 116.81 9.03 114.62 9.03L109.73 9.03L109.73 19.29M106.84 6.54L114.86 6.54C116.3 6.54 117.61 6.7 118.79 7C119.97 7.31 120.97 7.78 121.82 8.41C122.66 9.03 123.31 9.82 123.76 10.77C124.21 11.72 124.44 12.84 124.44 14.12C124.44 15.4 124.21 16.52 123.74 17.47C123.27 18.42 122.62 19.2 121.78 19.83C120.93 20.46 119.92 20.93 118.73 21.26C117.54 21.58 116.22 21.74 114.78 21.74L109.73 21.74L109.73 34.93L106.84 34.93L106.84 6.54M159.03 19.29L159.07 19.29L172.59 6.54L176.71 6.54L162.4 19.41L177.52 34.93L173.27 34.93L159.07 19.81L159.03 19.81L159.03 34.93L156.15 34.93L156.15 6.54L159.03 6.54L159.03 19.29M207.1 6.54H209.98V34.92H207.1ZM263.53 30.72L263.61 30.72L263.61 6.54L266.49 6.54L266.49 34.93L262.88 34.93L246.37 10.51L246.29 10.51L246.29 34.93L243.4 34.93L243.4 6.54L247.01 6.54L263.53 30.72M360.23 29.39C359.65 30.26 358.95 31.08 358.13 31.85C357.32 32.62 356.37 33.3 355.3 33.89C354.22 34.47 353.03 34.94 351.74 35.28C350.44 35.62 349.02 35.79 347.48 35.79C344.91 35.79 342.54 35.34 340.36 34.44C338.18 33.55 336.3 32.3 334.73 30.72C333.16 29.13 331.93 27.24 331.05 25.06C330.17 22.88 329.73 20.49 329.73 17.9C329.73 15.3 330.18 12.91 331.07 10.73C331.97 8.55 333.21 6.66 334.8 5.08C336.39 3.49 338.27 2.25 340.43 1.35C342.6 0.45 344.94 0 347.48 0C348.73 0 349.96 0.13 351.16 0.39C352.36 0.65 353.49 1.02 354.55 1.49C355.61 1.96 356.57 2.53 357.44 3.19C358.3 3.86 359.02 4.6 359.6 5.44L356.71 7.55C356.36 7.01 355.89 6.46 355.3 5.92C354.7 5.37 354 4.89 353.2 4.47C352.4 4.06 351.53 3.72 350.58 3.46C349.63 3.21 348.62 3.08 347.53 3.08C345.31 3.08 343.33 3.48 341.58 4.28C339.84 5.08 338.35 6.16 337.14 7.51C335.92 8.87 334.99 10.45 334.35 12.24C333.7 14.03 333.38 15.91 333.38 17.9C333.38 19.88 333.71 21.76 334.37 23.55C335.03 25.34 335.96 26.92 337.18 28.28C338.4 29.64 339.88 30.71 341.63 31.51C343.38 32.31 345.34 32.71 347.53 32.71C349.48 32.71 351.34 32.31 353.11 31.51C354.87 30.71 356.35 29.43 357.53 27.66L360.23 29.39M417.07 20.75C417.07 19.1 416.81 17.53 416.27 16.03C415.74 14.54 414.96 13.22 413.95 12.09C412.93 10.96 411.7 10.06 410.24 9.39C408.78 8.72 407.14 8.39 405.33 8.39C403.51 8.39 401.87 8.72 400.42 9.39C398.96 10.06 397.72 10.96 396.71 12.09C395.69 13.22 394.92 14.54 394.38 16.03C393.85 17.53 393.58 19.1 393.58 20.75C393.58 22.41 393.85 23.98 394.38 25.48C394.92 26.97 395.69 28.28 396.71 29.4C397.72 30.52 398.96 31.41 400.42 32.08C401.87 32.75 403.51 33.08 405.33 33.08C407.14 33.08 408.78 32.75 410.24 32.08C411.7 31.41 412.93 30.52 413.95 29.4C414.96 28.28 415.74 26.97 416.27 25.48C416.81 23.98 417.07 22.41 417.07 20.75M420.12 20.73C420.12 22.9 419.75 24.89 419 26.71C418.25 28.53 417.21 30.09 415.89 31.42C414.57 32.74 413.01 33.78 411.2 34.52C409.4 35.27 407.44 35.65 405.33 35.65C403.22 35.65 401.26 35.27 399.46 34.52C397.65 33.78 396.09 32.74 394.76 31.42C393.44 30.09 392.41 28.53 391.66 26.71C390.91 24.89 390.54 22.9 390.54 20.73C390.54 18.57 390.91 16.58 391.66 14.76C392.41 12.94 393.44 11.37 394.76 10.05C396.09 8.73 397.65 7.69 399.46 6.94C401.26 6.2 403.22 5.82 405.33 5.82C407.44 5.82 409.4 6.2 411.2 6.94C413.01 7.69 414.57 8.73 415.89 10.05C417.21 11.37 418.25 12.94 419 14.76C419.75 16.58 420.12 18.57 420.12 20.73M451.65 6.54L454.54 6.54L454.54 18.85L470.01 18.85L470.01 6.54L472.9 6.54L472.9 34.93L470.01 34.93L470.01 21.5L454.54 21.5L454.54 34.93L451.65 34.93L451.65 6.54M526.74 30.72L526.82 30.72L526.82 6.54L529.71 6.54L529.71 34.93L526.1 34.93L509.59 10.51L509.5 10.51L509.5 34.93L506.62 34.93L506.62 6.54L510.23 6.54L526.74 30.72"/><path d="M299.14 3.12V34.71" style="stroke:var(--logo-sep,#3B6FAB)" stroke-width="0.99" fill="none"/></symbol></svg>
+
+<a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header">
+  <div class="wrap site-header__bar">
+    <a class="brand" href="#inicio" aria-label="Pupkin Cohn — Ir al inicio" data-i18n-attr="aria-label:brand.aria">
+      <svg class="brand__mark" viewBox="0 0 74.77 111.54" aria-hidden="true" focusable="false"><use href="#pk-monogram"/></svg>
+      <svg class="brand__word" viewBox="0 0 529.71 35.79" aria-hidden="true" focusable="false"><use href="#pk-wordmark"/></svg>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegación principal" data-i18n-attr="aria-label:nav.aria">
+      <ul class="nav__list">
+        <li><a href="#firma" data-i18n="nav.firm">La firma</a></li>
+        <li><a href="#areas" data-i18n="nav.areas">Áreas de práctica</a></li>
+        <li><a href="#enfoque" data-i18n="nav.approach">Enfoque</a></li>
+        <li><a href="#equipo" data-i18n="nav.team">Equipo</a></li>
+      </ul>
+      <a class="btn btn--primary btn--sm nav__cta" href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <div class="site-header__tools">
+      <div class="lang" role="group" aria-label="Idioma" data-i18n-attr="aria-label:lang.aria">
+        <button type="button" data-set-lang="es" aria-pressed="true" lang="es" title="Español">ES</button>
+        <span class="lang__sep" aria-hidden="true"></span>
+        <button type="button" data-set-lang="en" aria-pressed="false" lang="en" title="English">EN</button>
+      </div>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú" data-i18n-attr="aria-label:menu.aria">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero" id="inicio" aria-roledescription="carousel" aria-label="Mensajes destacados" data-i18n-attr="aria-label:hero.aria">
+    <div class="hero__media" aria-hidden="true">
+      <img src="assets/img/hero-1800.jpg" srcset="assets/img/hero-900.jpg 900w, assets/img/hero-1800.jpg 1800w" sizes="100vw" alt="" width="1800" height="1198" fetchpriority="high" decoding="async">
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+
+    <div class="wrap hero__inner">
+      <h1 class="sr-only" data-i18n="hero.h1">Pupkin Cohn — Estudio Legal Tributario</h1>
+      <div class="hero__slides" id="hero-slides" aria-live="off">
+        <div class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 / 3">
+          <h2 class="hero__title" data-i18n="hero.title">Certeza tributaria para las decisiones que <em>definen</em> su negocio.</h2>
+          <p class="hero__lead" data-i18n="hero.lead">Asesoría tributaria y jurídica para empresas, inversionistas y familias empresarias: planificación, cumplimiento y controversias, con la precisión de un estudio especializado y la mirada de un socio estratégico.</p>
+        </div>
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="2 / 3">
+          <h2 class="hero__title" data-i18n="hero.s2.t">Planificación que <em>anticipa</em>. Defensa que respalda.</h2>
+          <p class="hero__lead" data-i18n="hero.s2.d">Diseñamos estructuras eficientes y las defendemos ante la autoridad y los tribunales cuando es necesario.</p>
+        </div>
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="3 / 3">
+          <h2 class="hero__title" data-i18n="hero.s3.t">Criterio local, <em>alcance internacional</em>.</h2>
+          <p class="hero__lead" data-i18n="hero.s3.d">Asesoramos inversiones y operaciones transfronterizas con un conocimiento profundo de la normativa chilena.</p>
+        </div>
+      </div>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#contacto" data-i18n="hero.cta1">Agendar una reunión</a>
+        <a class="btn btn--ghost" href="#areas" data-i18n="hero.cta2">Ver áreas de práctica</a>
+      </div>
+
+      <div class="hero__controls">
+        <div class="hero__dots" role="group" aria-label="Mensajes" data-i18n-attr="aria-label:hero.dots">
+          <button type="button" class="dot is-active" data-goto="0" aria-current="true" aria-label="Ir al mensaje 1"></button>
+          <button type="button" class="dot" data-goto="1" aria-label="Ir al mensaje 2"></button>
+          <button type="button" class="dot" data-goto="2" aria-label="Ir al mensaje 3"></button>
+        </div>
+        <button class="hero__pause" type="button" aria-label="Pausar" aria-pressed="false">
+          <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+          <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acceso rápido a las áreas de práctica -->
+  <div class="wrap tiles-wrap">
+    <ul class="tiles" aria-label="Acceso rápido a las áreas de práctica" data-i18n-attr="aria-label:tiles.aria" data-stagger>
+      <li data-reveal><a class="tile" href="#areas" data-open-area="1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M15.6 8.4l-2.1 5.1-5.1 2.1 2.1-5.1z"/></svg><span data-i18n="a1.t">Planificación tributaria</span></a></li>
+      <li data-reveal><a class="tile" href="#areas" data-open-area="2"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 8h15M15 4l4 4-4 4"/><path d="M20 16H5M9 12l-4 4 4 4"/></svg><span data-i18n="a2.t">Reorganizaciones y transacciones</span></a></li>
+      <li data-reveal><a class="tile" href="#areas" data-open-area="3"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span data-i18n="a3.t">Tributación internacional</span></a></li>
+      <li data-reveal><a class="tile" href="#areas" data-open-area="4"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16M7 20h10M5 7h14"/><path d="M5 7l-3 7a3.5 3.5 0 0 0 6 0z"/><path d="M19 7l-3 7a3.5 3.5 0 0 0 6 0z"/></svg><span data-i18n="a4.t">Controversias y litigio tributario</span></a></li>
+      <li data-reveal><a class="tile" href="#areas" data-open-area="5"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 14.5l2 2 4-4.5"/></svg><span data-i18n="a5.t">Cumplimiento y consultas</span></a></li>
+      <li data-reveal><a class="tile" href="#areas" data-open-area="6"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 10l9-6 9 6z"/><path d="M6 10v8M10 10v8M14 10v8M18 10v8M4 18h16M3 21h18"/></svg><span data-i18n="a6.t">Patrimonio y family office</span></a></li>
+    </ul>
+  </div>
+
+  <!-- ============================ LA FIRMA ============================ -->
+  <section class="section" id="firma" aria-labelledby="firma-title">
+    <div class="wrap">
+      <div class="split">
+        <div class="split__copy">
+          <p class="eyebrow" data-reveal data-i18n="firma.kicker">La firma</p>
+          <h2 class="statement" id="firma-title" data-reveal data-i18n="firma.statement">Somos un estudio legal especializado en derecho tributario. Convertimos la complejidad normativa en <em>decisiones claras</em> para quienes dirigen empresas, inversiones y patrimonios.</h2>
+          <p class="firma__body" data-reveal data-i18n="firma.body">Trabajamos junto a directorios, áreas de finanzas y otros asesores para anticipar riesgos, identificar oportunidades y defender con solidez técnica cada posición frente a la autoridad. Cada encargo se aborda con rigor, criterio de negocio y absoluta reserva.</p>
+          <ul class="checks" data-reveal>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><span data-i18n="firma.c1">Especialización en derecho tributario</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><span data-i18n="firma.c2">Anticipamos los riesgos antes de que se conviertan en contingencias</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg><span data-i18n="firma.c3">Trato directo con los profesionales a cargo de su caso</span></li>
+          </ul>
+          <a class="btn btn--primary" href="#contacto" data-reveal data-i18n="firma.cta">Hablemos de su caso</a>
+        </div>
+        <figure class="split__media" data-reveal>
+          <img src="assets/img/firma-900.jpg" srcset="assets/img/firma-560.jpg 560w, assets/img/firma-900.jpg 900w" sizes="(max-width: 900px) 100vw, 520px" alt="" width="900" height="1041" loading="lazy" decoding="async">
+        </figure>
+      </div>
+
+      <ul class="pillars" data-stagger>
+        <li data-reveal>
+          <h3 data-i18n="p1.t">Rigor técnico</h3>
+          <p data-i18n="p1.d">Análisis profundo de la norma, la jurisprudencia y el criterio administrativo.</p>
+        </li>
+        <li data-reveal>
+          <h3 data-i18n="p2.t">Visión de negocio</h3>
+          <p data-i18n="p2.d">Soluciones que entienden la operación, no solo la ley.</p>
+        </li>
+        <li data-reveal>
+          <h3 data-i18n="p3.t">Cercanía</h3>
+          <p data-i18n="p3.d">Comunicación directa, clara y oportuna en cada etapa del encargo.</p>
+        </li>
+        <li data-reveal>
+          <h3 data-i18n="p4.t">Confidencialidad</h3>
+          <p data-i18n="p4.d">Reserva y criterio en el manejo de la información de nuestros clientes.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ ÁREAS ============================ -->
+  <section class="section section--soft" id="areas" aria-labelledby="areas-title">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow" data-reveal data-i18n="areas.kicker">Áreas de práctica</p>
+        <h2 class="h2" id="areas-title" data-reveal data-i18n="areas.title">Una práctica enfocada, de la <em>planificación</em> a la defensa.</h2>
+        <p class="lead" data-reveal data-i18n="areas.intro">Acompañamos cada etapa de la vida tributaria de nuestros clientes: desde el diseño preventivo de una estructura hasta su defensa ante la autoridad y los tribunales.</p>
+      </div>
+
+      <ul class="areas">
+        <li class="area is-open">
+          <h3 class="area__h">
+            <button class="area__head" type="button" id="area-1-btn" aria-expanded="true" aria-controls="area-1">
+              <span class="area__num">01</span>
+              <span class="area__title" data-i18n="a1.t">Planificación tributaria</span>
+              <span class="area__desc" data-i18n="a1.d">Estructuras eficientes y defendibles para inversiones, operaciones y grupos empresariales.</span>
+              <span class="area__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="area__panel" id="area-1" role="region" aria-labelledby="area-1-btn">
+            <div><ul class="area__list">
+              <li data-i18n="a1.i1">Estructuración de inversiones, holdings y vehículos de inversión</li>
+              <li data-i18n="a1.i2">Eficiencia en el flujo y distribución de utilidades</li>
+              <li data-i18n="a1.i3">Elección de regímenes de tributación y análisis de alternativas</li>
+              <li data-i18n="a1.i4">Evaluación de riesgo frente a la norma general antielusión</li>
+            </ul></div>
+          </div>
+        </li>
+
+        <li class="area">
+          <h3 class="area__h">
+            <button class="area__head" type="button" id="area-2-btn" aria-expanded="false" aria-controls="area-2">
+              <span class="area__num">02</span>
+              <span class="area__title" data-i18n="a2.t">Reorganizaciones y transacciones</span>
+              <span class="area__desc" data-i18n="a2.d">Efectos tributarios y jurídicos de fusiones, adquisiciones y reestructuraciones.</span>
+              <span class="area__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="area__panel" id="area-2" role="region" aria-labelledby="area-2-btn">
+            <div><ul class="area__list">
+              <li data-i18n="a2.i1">Due diligence tributaria y legal</li>
+              <li data-i18n="a2.i2">Fusiones, divisiones, conversiones y reorganizaciones</li>
+              <li data-i18n="a2.i3">Compraventa de acciones, derechos y activos</li>
+              <li data-i18n="a2.i4">Estructuración societaria y contractual</li>
+            </ul></div>
+          </div>
+        </li>
+
+        <li class="area">
+          <h3 class="area__h">
+            <button class="area__head" type="button" id="area-3-btn" aria-expanded="false" aria-controls="area-3">
+              <span class="area__num">03</span>
+              <span class="area__title" data-i18n="a3.t">Tributación internacional</span>
+              <span class="area__desc" data-i18n="a3.d">Operaciones transfronterizas, convenios de doble tributación y precios de transferencia.</span>
+              <span class="area__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="area__panel" id="area-3" role="region" aria-labelledby="area-3-btn">
+            <div><ul class="area__list">
+              <li data-i18n="a3.i1">Inversión extranjera en Chile</li>
+              <li data-i18n="a3.i2">Inversión chilena en el exterior</li>
+              <li data-i18n="a3.i3">Aplicación de convenios para evitar la doble tributación</li>
+              <li data-i18n="a3.i4">Precios de transferencia y operaciones entre partes relacionadas</li>
+            </ul></div>
+          </div>
+        </li>
+
+        <li class="area">
+          <h3 class="area__h">
+            <button class="area__head" type="button" id="area-4-btn" aria-expanded="false" aria-controls="area-4">
+              <span class="area__num">04</span>
+              <span class="area__title" data-i18n="a4.t">Controversias y litigio tributario</span>
+              <span class="area__desc" data-i18n="a4.d">Defensa ante el SII, los Tribunales Tributarios y Aduaneros y los tribunales superiores.</span>
+              <span class="area__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="area__panel" id="area-4" role="region" aria-labelledby="area-4-btn">
+            <div><ul class="area__list">
+              <li data-i18n="a4.i1">Fiscalizaciones y auditorías del SII</li>
+              <li data-i18n="a4.i2">Reclamaciones ante los Tribunales Tributarios y Aduaneros</li>
+              <li data-i18n="a4.i3">Recursos ante Cortes de Apelaciones y Corte Suprema</li>
+              <li data-i18n="a4.i4">Estrategia de defensa y negociación con la autoridad</li>
+            </ul></div>
+          </div>
+        </li>
+
+        <li class="area">
+          <h3 class="area__h">
+            <button class="area__head" type="button" id="area-5-btn" aria-expanded="false" aria-controls="area-5">
+              <span class="area__num">05</span>
+              <span class="area__title" data-i18n="a5.t">Cumplimiento y consultas</span>
+              <span class="area__desc" data-i18n="a5.d">Asesoría continua para áreas de finanzas, y relación con la autoridad tributaria.</span>
+              <span class="area__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="area__panel" id="area-5" role="region" aria-labelledby="area-5-btn">
+            <div><ul class="area__list">
+              <li data-i18n="a5.i1">Consultas y solicitudes de pronunciamiento al SII</li>
+              <li data-i18n="a5.i2">IVA, impuesto a la renta e impuestos indirectos</li>
+              <li data-i18n="a5.i3">Devoluciones y recuperación de impuestos</li>
+              <li data-i18n="a5.i4">Revisión de cumplimiento y mapa de riesgos tributarios</li>
+            </ul></div>
+          </div>
+        </li>
+
+        <li class="area">
+          <h3 class="area__h">
+            <button class="area__head" type="button" id="area-6-btn" aria-expanded="false" aria-controls="area-6">
+              <span class="area__num">06</span>
+              <span class="area__title" data-i18n="a6.t">Patrimonio y family office</span>
+              <span class="area__desc" data-i18n="a6.d">Planificación patrimonial y sucesoria para familias empresarias y personas de alto patrimonio.</span>
+              <span class="area__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="area__panel" id="area-6" role="region" aria-labelledby="area-6-btn">
+            <div><ul class="area__list">
+              <li data-i18n="a6.i1">Planificación sucesoria, herencias y donaciones</li>
+              <li data-i18n="a6.i2">Vehículos familiares de inversión y tenencia de activos</li>
+              <li data-i18n="a6.i3">Domicilio, residencia y efectos tributarios personales</li>
+              <li data-i18n="a6.i4">Gobierno y continuidad patrimonial</li>
+            </ul></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ A QUIÉNES ASESORAMOS ============================ -->
+  <section class="section" aria-labelledby="clients-title">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="h2" id="clients-title" data-reveal data-i18n="clients.label">A quiénes asesoramos</h2>
+      </div>
+      <ul class="clients" data-stagger>
+        <li data-reveal data-i18n="c1">Grupos empresariales</li>
+        <li data-reveal data-i18n="c2">Inversionistas extranjeros</li>
+        <li data-reveal data-i18n="c3">Family offices y patrimonios familiares</li>
+        <li data-reveal data-i18n="c4">Fondos de inversión</li>
+        <li data-reveal data-i18n="c5">Empresas medianas y startups</li>
+        <li data-reveal data-i18n="c6">Otros estudios y asesores</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ ENFOQUE ============================ -->
+  <section class="section section--soft" id="enfoque" aria-labelledby="enfoque-title">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow" data-reveal data-i18n="approach.kicker">Enfoque</p>
+        <h2 class="h2" id="enfoque-title" data-reveal data-i18n="approach.title">Un método claro, <em>a la medida</em> de cada encargo.</h2>
+        <p class="lead" data-reveal data-i18n="approach.intro">Trabajamos con transparencia en alcance, plazos y criterios, para que cada decisión se tome con información completa.</p>
+      </div>
+
+      <ol class="steps" data-stagger>
+        <li class="step" data-reveal>
+          <span class="step__n">01</span>
+          <h3 data-i18n="s1.t">Diagnóstico</h3>
+          <p data-i18n="s1.d">Comprendemos su operación, sus objetivos y su contexto antes de recomendar.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__n">02</span>
+          <h3 data-i18n="s2.t">Estrategia</h3>
+          <p data-i18n="s2.d">Diseñamos alternativas, evaluamos riesgos y priorizamos junto a usted.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__n">03</span>
+          <h3 data-i18n="s3.t">Implementación</h3>
+          <p data-i18n="s3.d">Documentamos, ejecutamos y coordinamos con sus demás asesores.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__n">04</span>
+          <h3 data-i18n="s4.t">Seguimiento y defensa</h3>
+          <p data-i18n="s4.d">Lo acompañamos ante la autoridad y ajustamos la estrategia frente a cambios normativos.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================ EQUIPO ============================ -->
+  <section class="section" id="equipo" aria-labelledby="equipo-title">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="eyebrow" data-reveal data-i18n="team.kicker">Equipo</p>
+        <h2 class="h2" id="equipo-title" data-reveal data-i18n="team.title">Profesionales a cargo de <em>cada caso</em>.</h2>
+        <p class="lead" data-reveal data-i18n="team.intro">Un equipo con sólida formación y experiencia en derecho tributario, comprometido con un trato directo y cercano.</p>
+      </div>
+
+      <!-- TODO: reemplazar con los socios y abogados reales (nombre, cargo, reseña y, si se desea, fotografía). -->
+      <ul class="team" data-stagger>
+        <li class="member" data-reveal>
+          <div class="member__photo" aria-hidden="true"><span>N.A.</span></div>
+          <h3 class="member__name" data-i18n="team.name">Nombre Apellido</h3>
+          <p class="member__role" data-i18n="m1.role">Socio</p>
+          <p class="member__bio" data-i18n="team.bio">Reseña profesional breve: formación, áreas de especialización y trayectoria.</p>
+        </li>
+        <li class="member" data-reveal>
+          <div class="member__photo" aria-hidden="true"><span>N.A.</span></div>
+          <h3 class="member__name" data-i18n="team.name">Nombre Apellido</h3>
+          <p class="member__role" data-i18n="m2.role">Socio</p>
+          <p class="member__bio" data-i18n="team.bio">Reseña profesional breve: formación, áreas de especialización y trayectoria.</p>
+        </li>
+        <li class="member" data-reveal>
+          <div class="member__photo" aria-hidden="true"><span>N.A.</span></div>
+          <h3 class="member__name" data-i18n="team.name">Nombre Apellido</h3>
+          <p class="member__role" data-i18n="m3.role">Asociado senior</p>
+          <p class="member__bio" data-i18n="team.bio">Reseña profesional breve: formación, áreas de especialización y trayectoria.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ CONTACTO ============================ -->
+  <section class="section section--blue" id="contacto" aria-labelledby="contacto-title">
+    <div class="wrap contact">
+      <div class="contact__intro">
+        <p class="eyebrow" data-reveal data-i18n="contact.kicker">Contacto</p>
+        <h2 class="h2 h2--xl" id="contacto-title" data-reveal data-i18n="contact.title">Conversemos.</h2>
+        <p class="lead" data-reveal data-i18n="contact.lead">Cuéntenos su situación. Le responderemos con la prontitud y la reserva que su caso requiere.</p>
+
+        <!-- TODO: confirmar correo y agregar teléfono y dirección de la oficina cuando estén disponibles. -->
+        <dl class="contact__list" data-reveal>
+          <div>
+            <dt data-i18n="contact.mail.k">Correo</dt>
+            <dd><a href="mailto:contacto@pupkincohn.com">contacto@pupkincohn.com</a></dd>
+          </div>
+          <div>
+            <dt data-i18n="contact.office.k">Presencia</dt>
+            <dd data-i18n="contact.office.v">Chile</dd>
+          </div>
+          <div>
+            <dt data-i18n="contact.lang.k">Idiomas</dt>
+            <dd data-i18n="contact.lang.v">Atención en español e inglés</dd>
+          </div>
+        </dl>
+      </div>
+
+      <form class="form" id="contact-form" novalidate data-reveal>
+        <div class="form__grid">
+          <div class="field">
+            <input id="f-name" name="name" type="text" placeholder=" " autocomplete="name" required>
+            <label for="f-name" data-i18n="form.name">Nombre completo</label>
+          </div>
+          <div class="field">
+            <input id="f-company" name="company" type="text" placeholder=" " autocomplete="organization">
+            <label for="f-company" data-i18n="form.company">Empresa (opcional)</label>
+          </div>
+          <div class="field">
+            <input id="f-email" name="email" type="email" placeholder=" " autocomplete="email" required>
+            <label for="f-email" data-i18n="form.email">Correo electrónico</label>
+          </div>
+          <div class="field">
+            <input id="f-phone" name="phone" type="tel" placeholder=" " autocomplete="tel">
+            <label for="f-phone" data-i18n="form.phone">Teléfono (opcional)</label>
+          </div>
+          <div class="field field--select field--wide">
+            <select id="f-area" name="area">
+              <option value="" data-i18n="form.area.0">Seleccione un área</option>
+              <option data-i18n="a1.t">Planificación tributaria</option>
+              <option data-i18n="a2.t">Reorganizaciones y transacciones</option>
+              <option data-i18n="a3.t">Tributación internacional</option>
+              <option data-i18n="a4.t">Controversias y litigio tributario</option>
+              <option data-i18n="a5.t">Cumplimiento y consultas</option>
+              <option data-i18n="a6.t">Patrimonio y family office</option>
+              <option data-i18n="form.area.other">Otro</option>
+            </select>
+            <label for="f-area" data-i18n="form.area">Área de interés</label>
+          </div>
+          <div class="field field--wide">
+            <textarea id="f-msg" name="message" rows="4" placeholder=" " required></textarea>
+            <label for="f-msg" data-i18n="form.msg">¿En qué podemos ayudarle?</label>
+          </div>
+          <!-- Honeypot anti-spam: debe permanecer vacío -->
+          <div class="field--hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" name="consent" required>
+          <span data-i18n="form.consent">Acepto que Pupkin Cohn trate mis datos personales para responder esta consulta.</span>
+        </label>
+
+        <div class="form__foot">
+          <button class="btn btn--light" type="submit" data-i18n="form.submit">Enviar consulta</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </div>
+        <p class="form__note" data-i18n="form.note">El envío de este formulario no establece una relación abogado-cliente.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <div class="site-footer__logo">
+          <svg class="site-footer__mark" viewBox="0 0 74.77 111.54" aria-hidden="true" focusable="false"><use href="#pk-monogram"/></svg>
+          <svg class="site-footer__word" viewBox="0 0 529.71 35.79" aria-hidden="true" focusable="false"><use href="#pk-wordmark"/></svg>
+        </div>
+        <p data-i18n="brand.tagline">Estudio Legal Tributario</p>
+      </div>
+
+      <nav class="site-footer__col" aria-label="La firma" data-i18n-attr="aria-label:footer.firm.aria">
+        <p class="site-footer__h" data-i18n="footer.firm">La firma</p>
+        <ul>
+          <li><a href="#firma" data-i18n="nav.firm">La firma</a></li>
+          <li><a href="#areas" data-i18n="nav.areas">Áreas de práctica</a></li>
+          <li><a href="#enfoque" data-i18n="nav.approach">Enfoque</a></li>
+          <li><a href="#equipo" data-i18n="nav.team">Equipo</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__col site-footer__col--plain">
+        <p class="site-footer__h" data-i18n="footer.contact">Contacto</p>
+        <ul>
+          <li><a href="mailto:contacto@pupkincohn.com">contacto@pupkincohn.com</a></li>
+          <li data-i18n="contact.lang.v">Atención en español e inglés</li>
+          <li><a href="#contacto" data-i18n="footer.write">Escríbanos</a></li>
+        </ul>
+        <div class="lang lang--footer" role="group" aria-label="Idioma" data-i18n-attr="aria-label:lang.aria">
+          <button type="button" data-set-lang="es" aria-pressed="true" lang="es">ES</button>
+          <span class="lang__sep" aria-hidden="true"></span>
+          <button type="button" data-set-lang="en" aria-pressed="false" lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer__bar">
+    <div class="wrap site-footer__legal">
+      <p>© <span data-year>2026</span> Pupkin Cohn. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+      <p data-i18n="footer.disclaimer">La información de este sitio es de carácter general e informativo y no constituye asesoría legal ni establece una relación abogado-cliente.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/lang-en.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
