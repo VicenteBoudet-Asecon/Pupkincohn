@@ -3,6 +3,8 @@
 Sitio estático (HTML + CSS + JavaScript, sin dependencias ni paso de compilación) para **pupkincohn.com**.
 Bilingüe español / inglés con selector **ES | EN**.
 
+**Demo en línea:** https://vicenteboudet-asecon.github.io/Pupkincohn/ (contenido de ejemplo; ver «Pendientes antes de publicar»).
+
 ## Estructura
 
 ```
