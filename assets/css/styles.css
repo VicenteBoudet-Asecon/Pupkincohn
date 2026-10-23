@@ -325,15 +325,42 @@ em { font-style: normal; color: var(--brand); }
 @media (max-width: 1000px) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 2.6rem; } .step::before { right: 0 !important; } }
 @media (max-width: 560px) { .steps { grid-template-columns: 1fr; } }
 
-/* ---------- Equipo ---------- */
-.team { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.8rem; }
-.member__photo { position: relative; display: grid; place-items: center; aspect-ratio: 4 / 3.4; margin-bottom: 1.3rem; background: linear-gradient(160deg, var(--tint), var(--brand-100)); border-radius: var(--radius); overflow: hidden; }
-.member__photo span { font-size: clamp(2.6rem, 4vw, 3.6rem); line-height: 1; font-weight: 300; letter-spacing: .04em; color: rgba(59, 111, 171, .55); }
-.member__name { font-size: 1.45rem; font-weight: 500; }
-.member__role { margin-top: .3rem; font-size: .8rem; line-height: 1.3; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--brand); }
-.member__bio { max-width: 24rem; margin-top: .8rem; font-size: 1rem; line-height: 1.6; }
-@media (max-width: 900px) { .team { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 560px) { .team { grid-template-columns: 1fr; } }
+/* ---------- Equipo (organigrama) ---------- */
+.org__label { margin-bottom: 1.1rem; font-size: .8rem; line-height: 1.3; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+.org__label--teams { margin-top: clamp(2.6rem, 5vw, 3.8rem); padding-top: 1.8rem; border-top: 1px solid var(--line); }
+
+.person { display: flex; align-items: center; gap: 1.2rem; }
+.avatar { flex: none; display: grid; place-items: center; overflow: hidden; border-radius: var(--radius); background: linear-gradient(160deg, var(--tint), var(--brand-100)); color: var(--brand); letter-spacing: .04em; }
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+.person__name { font-size: 1.25rem; font-weight: 500; line-height: 1.2; }
+.person__role { margin-top: .3rem; font-size: .78rem; line-height: 1.3; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--brand); }
+
+.partners { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem; }
+.person--lg { gap: 1.6rem; padding: 1.6rem; background: var(--soft); border-radius: var(--radius); border-top: 3px solid var(--brand); }
+.person--lg .avatar { width: 112px; height: 136px; font-size: 2.4rem; }
+.person--lg .person__name { font-size: 1.7rem; }
+
+.squads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.4rem 1.4rem; align-items: start; }
+.person--md { padding: 1.1rem 1.3rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); }
+.person--md .avatar { width: 76px; height: 76px; font-size: 1.5rem; }
+.person--md .person__name { font-size: 1.4rem; }
+
+/* the juniors hang from their senior with a thin connector line */
+.juniors { display: grid; gap: .8rem; margin-left: calc(1.3rem + 38px); padding: .8rem 0 0 1.7rem; }
+.juniors li { position: relative; }
+.juniors li::before { content: ""; position: absolute; left: -1.7rem; top: -.8rem; bottom: -.8rem; width: 1px; background: #bfd0e3; }
+.juniors li:last-child::before { bottom: 50%; }
+.juniors li::after { content: ""; position: absolute; left: -1.7rem; top: 50%; width: 1.7rem; height: 1px; background: #bfd0e3; }
+.person--sm { padding: .8rem 1rem; background: var(--soft); border-radius: var(--radius); gap: 1rem; }
+.person--sm .avatar { width: 48px; height: 48px; font-size: 1rem; }
+.person--sm .person__name { font-size: 1.1rem; }
+.person--sm .person__role { margin-top: .2rem; font-size: .72rem; }
+
+@media (max-width: 900px) { .partners, .squads { grid-template-columns: 1fr; } }
+@media (max-width: 480px) {
+  .person--lg { flex-direction: column; align-items: flex-start; }
+  .person--lg .avatar { width: 100%; height: 150px; }
+}
 
 /* ---------- Contacto (brand-blue band) ---------- */
 .section--blue { background: var(--brand-600); color: #fff; }
