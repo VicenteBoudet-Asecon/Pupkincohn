@@ -327,7 +327,7 @@ em { font-style: normal; color: var(--brand); }
 
 /* ---------- Equipo (organigrama) ---------- */
 .org__label { margin-bottom: 1.1rem; font-size: .8rem; line-height: 1.3; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
-.org__label--teams { margin-top: clamp(2.6rem, 5vw, 3.8rem); padding-top: 1.8rem; border-top: 1px solid var(--line); }
+.org__label--tier { margin-top: clamp(2.6rem, 5vw, 3.8rem); padding-top: 1.8rem; border-top: 1px solid var(--line); }
 
 .person { display: flex; align-items: center; gap: 1.2rem; }
 .avatar { flex: none; display: grid; place-items: center; overflow: hidden; border-radius: var(--radius); background: linear-gradient(160deg, var(--tint), var(--brand-100)); color: var(--brand); letter-spacing: .04em; }
@@ -340,6 +340,7 @@ em { font-style: normal; color: var(--brand); }
 .person--lg .avatar { width: 112px; height: 136px; font-size: 2.4rem; }
 .person--lg .person__name { font-size: 1.7rem; }
 
+.directors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.4rem; }
 .squads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.4rem 1.4rem; align-items: start; }
 .person--md { padding: 1.1rem 1.3rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); }
 .person--md .avatar { width: 76px; height: 76px; font-size: 1.5rem; }
@@ -356,7 +357,7 @@ em { font-style: normal; color: var(--brand); }
 .person--sm .person__name { font-size: 1.1rem; }
 .person--sm .person__role { margin-top: .2rem; font-size: .72rem; }
 
-@media (max-width: 900px) { .partners, .squads { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .partners, .directors, .squads { grid-template-columns: 1fr; } }
 @media (max-width: 480px) {
   .person--lg { flex-direction: column; align-items: flex-start; }
   .person--lg .avatar { width: 100%; height: 150px; }

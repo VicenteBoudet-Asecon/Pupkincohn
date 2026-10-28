@@ -130,13 +130,15 @@ window.PKCN_I18N = {
     'team.title': 'The professionals behind <em>every matter</em>.',
     'team.intro': 'A team with strong training and experience in tax law, committed to direct and close collaboration.',
     'team.l1': 'Partners',
+    'team.ldir': 'Directors',
     'team.l2': 'Attorneys',
     'role.partner': 'Partner',
+    'role.director.tax': 'Tax Director',
+    'role.director.ops': 'Director of Operations',
     'role.senior.corp': 'Senior Attorney, Corporate',
     'role.senior.labor': 'Senior Attorney, Labor',
     'role.junior.m': 'Junior Attorney',
     'role.junior.f': 'Junior Attorney',
-    'role.team': 'Legal team',
 
     /* contact */
     'contact.kicker': 'Contact',

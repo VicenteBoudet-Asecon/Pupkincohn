@@ -60,11 +60,13 @@
     "employee": [
       { "@type": "Person", "name": "Rafael Cohn", "jobTitle": "Socio" },
       { "@type": "Person", "name": "Benjamín Pupkin", "jobTitle": "Socio" },
+      { "@type": "Person", "name": "Fernanda Yoma", "jobTitle": "Directora de Tax" },
+      { "@type": "Person", "name": "Thomas Taub", "jobTitle": "Director de Operaciones" },
       { "@type": "Person", "name": "Pedro Gil", "jobTitle": "Abogado Senior Corporativo" },
       { "@type": "Person", "name": "Valentina Oporto", "jobTitle": "Abogada Senior Laboral" },
       { "@type": "Person", "name": "Vanessa Donoso", "jobTitle": "Abogada Junior" },
       { "@type": "Person", "name": "Matías Peña", "jobTitle": "Abogado Junior" },
-      { "@type": "Person", "name": "Juan Harttig" }
+      { "@type": "Person", "name": "Juan Harttig", "jobTitle": "Abogado Junior" }
     ]
   }
   </script>
@@ -391,7 +393,7 @@
         <p class="lead" data-reveal data-i18n="team.intro">Un equipo con sólida formación y experiencia en derecho tributario, comprometido con un trato directo y cercano.</p>
       </div>
 
-      <!-- TODO: agregar fotografía y reseña de cada profesional (hoy se muestran sus iniciales) y confirmar el cargo de Juan Harttig. -->
+      <!-- TODO: agregar fotografía y reseña de cada profesional (hoy se muestran sus iniciales). -->
       <div class="org">
         <p class="org__label" data-reveal data-i18n="team.l1">Socios</p>
         <ul class="partners" data-stagger>
@@ -411,7 +413,25 @@
           </li>
         </ul>
 
-        <p class="org__label org__label--teams" data-reveal data-i18n="team.l2">Abogados</p>
+        <p class="org__label org__label--tier" data-reveal data-i18n="team.ldir">Dirección</p>
+        <ul class="directors" data-stagger>
+          <li class="person person--md" data-reveal>
+            <div class="avatar" aria-hidden="true"><span>FY</span></div>
+            <div class="person__info">
+              <h3 class="person__name">Fernanda Yoma</h3>
+              <p class="person__role" data-i18n="role.director.tax">Directora de Tax</p>
+            </div>
+          </li>
+          <li class="person person--md" data-reveal>
+            <div class="avatar" aria-hidden="true"><span>TT</span></div>
+            <div class="person__info">
+              <h3 class="person__name">Thomas Taub</h3>
+              <p class="person__role" data-i18n="role.director.ops">Director de Operaciones</p>
+            </div>
+          </li>
+        </ul>
+
+        <p class="org__label org__label--tier" data-reveal data-i18n="team.l2">Abogados</p>
         <div class="squads" data-stagger>
           <div class="squad" data-reveal>
             <div class="person person--md">
@@ -433,7 +453,7 @@
                 <div class="avatar" aria-hidden="true"><span>JH</span></div>
                 <div class="person__info">
                   <h3 class="person__name">Juan Harttig</h3>
-                  <p class="person__role" data-i18n="role.team">Equipo jurídico</p>
+                  <p class="person__role" data-i18n="role.junior.m">Abogado Junior</p>
                 </div>
               </li>
             </ul>
